@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN npm i -D @playwright/test@1.54.0
 
-RUN npx -y playwright install --with-deps chromium --only-shell
+RUN npx -y playwright install --with-deps chromium
 
 EXPOSE 3000
 
